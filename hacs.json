@@ -1,0 +1,8 @@
+{
+    "name": "Samsung MDC Display Remote",
+    "persistent_directory": "keep",
+    "country": "US",
+    "domains": [
+        "remote"
+    ]
+}
