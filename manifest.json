@@ -3,8 +3,8 @@
   "name": "Samsung MDC Display Remote",
   "version": "1.0.0",
   "config_flow": true,
-  "documentation": "",
-  "issue_tracker": "",
+  "documentation": "https://github.com/mikeknoop/samsungmdc-remote",
+  "issue_tracker": "https://github.com/mikeknoop/samsungmdc-remote/issues",
   "requirements": [
   ],
   "ssdp": [],
