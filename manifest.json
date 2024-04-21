@@ -1,0 +1,20 @@
+{
+  "domain": "samsungmdc-remote",
+  "name": "Samsung MDC Display Remote",
+  "version": "1.0.0",
+  "config_flow": true,
+  "documentation": "",
+  "issue_tracker": "",
+  "requirements": [
+  ],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [
+    "remote"
+  ],
+  "codeowners": [
+    "@mikeknoop"
+  ],
+  "iot_class": "local_polling"
+}
