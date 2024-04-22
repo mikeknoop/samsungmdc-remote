@@ -87,3 +87,4 @@ class SamsungMDCDisplayRemote(RemoteEntity):
             cmd_name = args.pop(0)
             func = getattr(self.mdc, cmd_name)
             await func(self.display_id, [int(a) if a.isnumeric() else a for a in args])
+            await self.mdc.close() # force reconnect on next command
