@@ -81,7 +81,7 @@ class SamsungMDCDisplayRemote(RemoteEntity):
         Example: `volume,100`
         Example: `manual_lamp,25`
         """
-        _LOGGER.warning(repr(command))
+        # _LOGGER.warning(repr(command))
         for cmd in command:
             args = cmd.split(',')
             cmd_name = args.pop(0)
