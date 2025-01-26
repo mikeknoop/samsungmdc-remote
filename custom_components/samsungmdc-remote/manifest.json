@@ -1,12 +1,12 @@
 {
   "domain": "samsungmdc-remote",
   "name": "Samsung MDC Display Remote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "config_flow": true,
   "documentation": "https://github.com/mikeknoop/samsungmdc-remote",
   "issue_tracker": "https://github.com/mikeknoop/samsungmdc-remote/issues",
   "requirements": [
-    "python-samsung-mdc==1.9.1"
+    "python-samsung-mdc==1.15.9"
   ],
   "ssdp": [],
   "zeroconf": [],
