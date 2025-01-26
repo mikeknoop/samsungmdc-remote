@@ -2,6 +2,7 @@
 
 import asyncio
 import logging
+from dateutil import parser
 from collections.abc import Iterable
 
 from typing import (
@@ -86,5 +87,5 @@ class SamsungMDCDisplayRemote(RemoteEntity):
             args = cmd.split(',')
             cmd_name = args.pop(0)
             func = getattr(self.mdc, cmd_name)
-            await func(self.display_id, [int(a) if a.isnumeric() else a for a in args])
+            await func(self.display_id, [int(a) if a.isnumeric() else parser.parse(a) if ":" in a else a for a in args])
             await self.mdc.close() # force reconnect on next command
